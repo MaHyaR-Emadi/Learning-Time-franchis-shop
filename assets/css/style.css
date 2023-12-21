@@ -1,17 +1,103 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Montserrat:wght@300;400;500&family=Sora:wght@300;400;500&display=swap');
+/* Global */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Montserrat:wght@300;400;500&family=Sora:wght@300;400;500&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Sora", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+}
+
+a{
+   text-decoration: none;
 }
 
 body {
-    background-color: #fff;
+   background-color: #fff;
 }
 
+ul {
+   list-style-type: none;
+}
+
+/* Header */
+
 .head {
-    padding: 20px 10% ;
-    background-color: #161834;
-} */
+   /* position: fixed;
+   top: 0;
+   left: 0; */
+   /* width: 100%; */
+   padding: 30px 20%;
+   background-color: #161834;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* z-index: 100; */
+}
+
+/* Navbar and Join Button */
+.navbar ul {
+   display: flex;
+}
+
+.navbar ul li {
+    font-size:  18px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 35px;
+    
+}
+
+.navbar li:hover,
+.navbar li.active  {
+   color: #ffcc00;
+}
+
+.head .join {
+   font-size: 18px;
+   color: #161834;
+   font-weight: 500;
+   background-color: #fea700;
+   padding: 10px 25px 10px 25px;
+   margin: 0 60px 0 0;
+   border-radius: 24px;
+}
+
+.head .join:hover {
+   color: #fff;
+   background-color: #252525;
+}
+
+/* Slide */
+
+.slide {
+   background-color: #161735;
+   display: flex;
+   height: 620px;
+   justify-content: center;
+   border-radius: 0 0 0 55px;
+   position: relative;
+}
+
+.slide #shop-slider {
+   position: absolute;
+}
+
+.slide .img1 {
+   position: absolute;
+   width: 360px;
+   height: 390px;
+   bottom: 120px;
+   right: 120px;
+   border-radius: 24px 0 24px 0 ;
+}
+
+
+/* Info */
+
+.info {
+   margin-top: 280px;
+}
