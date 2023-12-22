@@ -2,7 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Montserrat:wght@300;400;500&family=Sora:wght@300;400;500&display=swap');
 
-* {
+*,
+*::before,
+*::after {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
@@ -76,13 +78,86 @@ ul {
 .slide {
    background-color: #161735;
    display: flex;
-   height: 620px;
+   height: 625px;
    justify-content: center;
-   border-radius: 0 0 0 55px;
+   border-radius: 0 0 0 3.75rem;
    position: relative;
 }
 
-.slide #shop-slider {
+.slide #shop-slider .sub.shop-sliderm {
+   position: absolute;
+   border-radius: 0 0 24px 25px;
+   z-index: 10;
+}
+.slide .pricebox .foni{
+   font-size: 29px;
+   font-weight: 600;
+}
+.slide .pricebox{
+   position: absolute;
+   width: 210px;
+   height: 210px;
+   padding: 20px;
+   color: #252525;
+   background-color: #fea700;
+   /* positioning with vw and vh */
+   /* right: 27.3vw;
+   bottom: 20.5vh; */
+   right: 524px;
+   bottom: 180px;
+   border-radius: 1.75rem 0 0 0 ;
+   text-align: center;
+   z-index: 1;
+}
+.slide .box {
+   position: absolute;
+   width: 360px;
+   height: 390px;
+   color: #ffcc00;
+   /* positioning with vw and vh */
+   /* right: 19.5vw;
+   bottom: -60px; */
+   right: 374px;
+   bottom: -67px;
+   background-color: white;
+   position: absolute;
+   border-radius: 1.75rem 0 1.75rem 0;
+   z-index: 2;
+}
+
+
+.slide #shop-slider .img1 {
+   position: absolute;
+}
+
+.slide #shop-slider .img1 img {
+   position: absolute;
+   width: 360px ;
+   height: 280px;
+   background-color: aqua;
+   z-index: 15;
+}
+.slide #shop-slider .img2 img {
+   position: absolute;
+   width: 360px ;
+   height: 280px;
+   background-color: aqua;
+   z-index: 4;
+}
+.slide #shop-slider .img3 img {
+   position: absolute;
+   width: 360px ;
+   height: 280px;
+   background-color: aqua;
+   z-index: 5;
+}
+
+/* .slide #shop-slider .sub.shop-sliderm {
+   
+   border-radius: 0px 70px 0px 0px;
+} */
+
+/* .slide #shop-slider {
    position: absolute;
 }
 
@@ -90,10 +165,10 @@ ul {
    position: absolute;
    width: 360px;
    height: 390px;
-   bottom: 120px;
+   bottom: 115px;
    right: 120px;
-   border-radius: 24px 0 24px 0 ;
-}
+   border-radius: 1.75rem 0 1.75rem 0 ;
+} */
 
 
 /* Info */
