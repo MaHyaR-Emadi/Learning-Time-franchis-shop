@@ -4,14 +4,86 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>franchise shop</title>
+      <meta name="title" content="shopping" />
+      <meta
+         name="description"
+         content="this is a shopping store website and im trying to learn HTML-CSS-JS"
+      />
       <link rel="stylesheet" href="assets/css/style.css" />
       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+      <link
+         rel="stylesheet"
+         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0"
+      />
+
+      <script src="assets/js/script.js" defer></script>
+
    </head>
    <body>
 
       <!-- Header -->
 
-      <header class="head">
+      <header class="header" data-header>
+
+         <div class="container">
+
+            <a href="#" class="log">
+                   <img src="assets/icon/franchise.webp" width="190" height="28" alt="franchise">
+             </a>  
+
+             <nav class="navbar" data-navbar>
+
+                  <ul class="navbar-list">
+
+                     <li>
+                        <a href="#" class="navbar-link label-medium active">Home</a>
+                     </li>
+
+                     <li>
+                        <a href="#" class="navbar-link label-medium">About</a>
+                     </li>
+
+                     <li>
+                        <a href="#" class="navbar-link label-medium">Stores</a>
+                     </li>
+
+                     <li>
+                        <a href="#" class="navbar-link label-medium">Franchise</a>
+                     </li>
+                     </li>
+
+                     <li>
+                        <a href="#" class="navbar-link label-medium">News</a>
+                     </li>
+                     </li>
+
+                     <li>
+                        <a href="#" class="navbar-link label-medium">Contact</a>
+                     </li>
+
+                  </ul>
+
+                  <div class="navbar-wrapper">
+                     <a href="" class="btn btn-fill label-medium">Join us</a>
+                  </div>
+
+             </nav>
+
+             <button class="nav-toggle-btn icon-btn" aria-label="toggle navbar" data-nav-toggler>
+               <span class="material-symbols-rounded open" aria-hidden="true">menu</span>
+               <span class="material-symbols-rounded close" aria-hidden="true">close</span>
+             </button>
+
+         </div>
+
+
+     
+
+      </header>
+
+
+      <!-- <div class="heading">
          <img src="assets/icon/franchise.webp" alt="franchise" />
 
          <nav class="navbar">
@@ -22,56 +94,36 @@
                <a href=""> <li>Franchise</li></a>
                <a href=""> <li>News</li></a>
                <a href=""> <li>Contact</li></a>
+               <a href="#" class="join"><li>Join us</li></a>
             </ul>
          </nav>
 
-         <a href="#" class="join">Join us</a>
-      </header>
+         
+      </div>
 
-      <!-- Section Slide -->
+         <div id="shop-slider">
 
-      <section class="slide">
-
-            <div id="shop-slider">
-
-                <img class="sub.shop-sliderm" src="/assets/icon/shopping.webp" >
-                <div class="img1">
-                    <img src="assets/icon/1.webp" alt="">
-               </div>
-                <div class="img2">
-                    <img src="assets/icon/2.webp" alt="">
-               </div>
-                <div class="img3">
-                    <img src="assets/icon/3.webp" alt="">
-               </div>
-                <div class="pricebox">
-                    <h3><span class="foni">$ 13.62         </span>     / 1 Kg</h3>
-               </div>
-               
-                      <div class="box">
-                      </div>
-                      
-            </div>
+            <img class="sub.shop-sliderm" src="/assets/icon/shopping.webp" >
+            <div class="img1">
+                <img src="assets/icon/1.webp" alt="">
+           </div>
+            <div class="img2">
+                <img src="assets/icon/2.webp" alt="">
+           </div>
+            <div class="img3">
+                <img src="assets/icon/3.webp" alt="">
+           </div>
+            <div class="pricebox">
+                <h3><span class="foni">$ 13.62         </span>     / 1 Kg</h3>
+           </div>
+           
+                  <div class="box">
+                  </div>
+                  
+        </div> -->
+         
 
          
-           
-
-         <!-- <div id="shop-slider">
-            <img class="sub.shop-sliderm" src="/assets/icon/shopping.webp"  />
-            <div>
-            <img class="img1" src="assets/icon/1.webp" alt="">
-            
-        </div>
-         </div> -->
-
-        <!-- <div>
-            <img class="sub.shop-sliderm" src="/assets/icon/shopping.webp"  />
-          <div id="shop-slider">
-
-          </div>
-        </div> -->
-
-      </section>
 
       <!-- Section Info -->
 
