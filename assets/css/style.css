@@ -230,6 +230,12 @@ body {
    letter-spacing: var(--traking-p-05);
 }
 
+.label-small {
+   font-size:  11px ;
+   font-weight: 100;
+   letter-spacing: var(--traking-p-05);
+}
+
 /* Reused Style */
 
 .material-symbols-rounded {
@@ -248,12 +254,15 @@ body {
 }
 
 
-.loyalty-card .location .location-btn:where(:hover, :focus),
-.loyalty-card .loyalty-join-btn:where(:hover, :focus),
-.hero .more-btn:where(:hover, :focus),
-.cooperation .detail-btn:where(:hover, :focus) {
+.loyalty-card .location .location-btn:where(:hover),
+.loyalty-card .loyalty-join-btn:where(:hover),
+.hero .more-btn:where(:hover),
+.cooperation .detail-btn:where(:hover),
+.about-us-div .read-news-btn:where(:hover)  {
    opacity: 0.9;
 }
+
+
 
 /* button */
 
@@ -494,9 +503,6 @@ body {
    width: 100%;
    height: auto;
 }
-
-
-
 
 .price .price-of-product {
    position: absolute;
@@ -742,4 +748,168 @@ baraye inke az paeen e pic - div e ma bezane biroon ham height : fit-content goz
 .cooperation .cooperation-image {
    margin-top: 30px;
    width: 100%;
+}
+
+/* about us */
+
+.about-us-section .about-us-div {
+   margin-top: 90px;
+   margin-bottom: 90px;
+}
+
+.about-us-section .about-us-div .read-more-blog {
+   color: var(--yellow-1);
+   font-size: var(--fs-label-medium);
+}
+
+.about-us-section .about-us-div .read-more-about {
+   margin-top: 10px;
+   margin-bottom: 10px;
+   padding-bottom: 20px;
+}
+
+.about-us-div .img-holder {
+   aspect-ratio: var(--width) / var(--height);
+   background-color: var(--neutral-80);
+   overflow: hidden;
+}
+
+.about-us-div .img-cover {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.about-us-div .card {
+   border-radius: var(--radius-large);
+   overflow: hidden;
+   box-shadow: var(--shadow-2);
+   transition: var(--transition-duration-quick) var(--transition-easing-quick);
+   /* margin-bottom: 20px; */
+}
+
+.about-us-div .card:where(:hover, :focus-within) { 
+   box-shadow: var(--shadow-4);
+}
+
+.about-us-div .card-banner { position: relative;}
+
+.about-us-div .card-banner .img-cover {
+   transition: var(--transition-duration-smooth) var(--transition-easing-quick);
+}
+
+.about-us-div .card:where(:hover, :focus-within) .img-cover {
+   scale: 1.05;
+   rotate: 2deg;
+}
+
+.about-us-div .card :where(.fav-btn) {
+   position: absolute;
+   top: 20px;
+}
+
+.about-us-div .card .fav-icon {
+   font-size: 15px;
+   vertical-align: middle;
+}
+
+.about-us-div .card .fav-btn {
+   background-color: #272727;
+   color: var(--neutral-90);
+   right: 30px;
+   border-radius: var(--radius-medium);
+   font-size: 11px;
+   padding: 4px 10px;
+   transition: var(--transition-duration-quick) var(--transition-easing-quick);
+}
+
+.about-us-div .fav-icon { color: var(--white);}
+
+.about-us-div .fav-btn.active .material-symbols-rounded {
+   font-variation-settings: 'FILL' 1;
+}
+
+.about-us-div .card-content {
+   padding: 30px 45px 30px 45px;
+}
+
+.about-us-div .category {
+   background-color: var(--neutral-90);
+   color: var(--neutral-40);
+   padding: 5px 10px;
+   width: fit-content;
+   border-radius: var(--radius-large);
+   font-size: 12px;
+   transition: var(--transition-duration-quick) var(--transition-easing-quick);
+}
+
+.about-us-div .card-content .category:where(:hover, :focus) {
+   color: var(--neutral-5);
+}
+
+.about-us-div .card-content .category:where(:active, :focus-visible) {
+   background-color: var(--neutral-60);
+}
+
+.about-us-div .card-content .card-title {
+margin-block: 18px;
+color: var(--neutral-20);
+transition: var(--transition-duration-quick) var(--transition-easing-quick);
+}
+
+.about-us-div .card-content .card-text { 
+   color: var(--neutral-40);
+   font-size: 12px;
+   font-weight: 100;
+}
+
+.about-us-div .card .card-title:where(:hover, :focus-visible) { color: var(--primary-100); }
+
+.about-us-div .card .card-history {
+   padding-block-start: 16px ;
+   margin-block-start: 16px;
+   border-block-start: 1px solid var(--neutral-90);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 12px ;
+}
+
+.about-us-div .card .history-item {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 4px;
+   color: var(--neutral-20);
+}
+
+.about-us-div .card .history-icon {
+   vertical-align: middle;
+}
+
+:is(.history-text, .history-icon):is(:hover, :focus-visible){
+   color: var(--yellow-0);
+   text-decoration: underline;
+}
+
+.store-list {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+   gap: 16px ;
+}
+
+.about-us-div .read-news-btn {
+   margin: 65px 0 0 0;  
+    background-color: var(--yellow-1);
+    color: var(--neutral-5);
+    position: relative;
+    /* change position to middle */
+    justify-self: center;
+    text-align: center;
+    width: fit-content;
+    padding: 15px 35px;
+    font-weight: 500;
+    border-radius: var(--radius-extra-large);
+    transition: var(--transition-duration-quick) var(--transition-easing-quick);
 }
