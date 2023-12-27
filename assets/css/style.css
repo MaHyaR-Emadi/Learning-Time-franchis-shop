@@ -159,7 +159,7 @@ html {
    font-size: var(--fs-base);
    scroll-behavior: smooth;
    /* image problem for scroll */
-   overflow-x: hidden;
+   /* overflow-x: hidden; */
 }
 
 body {
@@ -240,16 +240,19 @@ body {
    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
-
-
 .container {
    padding-inline: 16px;
-   max-width: 480px;
+   max-width: 450px;
    width: 100%;
    margin-inline: auto;
 }
 
 
+.loyalty-card .location .location-btn:where(:hover, :focus),
+.loyalty-card .loyalty-join-btn:where(:hover, :focus),
+.hero .more-btn:where(:hover, :focus) {
+   opacity: 0.9;
+}
 
 /* button */
 
@@ -527,6 +530,7 @@ body {
 
 .info {
    padding-block-start: 580px;
+   padding-block-end: 50px;
 }
 
 .info .company-intro {
@@ -567,12 +571,6 @@ body {
    color: var(--yellow-1);
 }
 
-/* .data-meta-item {
-   display: flex;
-   justify-content: space-between;
-   align-items: start;
-   flex-wrap: wrap;
-} */
 .info .data-meta-item .meta-item .meta-item-img {
    margin-bottom: 20px;
 }
@@ -588,3 +586,85 @@ body {
 .meta-item-p {
    font-size: 13px;
 }
+
+/* loyalty */
+
+.loyalty-card .section-wrapper {
+   width: 100%;
+   margin-bottom: 20px;
+}
+
+.loyalty-card .container .loyalty-join-btn {
+   margin-top: 20px;
+   background-color: var(--neutral-5);
+   color: var(--neutral-100);
+   display: inline;
+   padding: 10px 35px;
+   border-radius: var(--radius-extra-large);
+   font-weight: 600;
+}
+
+
+.loyalty-card .loyalty-location-pic {
+   position: relative;
+   margin-block-start: 30px;
+   width: 100%;
+   height: auto;
+}
+
+/* location va loyalty-location-address baraye ine ke browser ke resize mishe bar hasbe browser biad change she . 
+dar in location ma width 100% midim ke parent hast va dar div e ke info gharar dare size max-width 350px dadim 
+be hamrahe margin .
+baraye inke az paeen e pic - div e ma bezane biroon ham height : fit-content gozashtim .
+*/
+.loyalty-card .location {
+   margin-top: -150px;
+   width: 100%;
+}
+.loyalty-card{
+   margin-bottom: 30vh;
+}
+/* age position absolute ro dar location bezarim margin right dorost kar nemikone */
+.loyalty-card .loyalty-location-address {
+   position: absolute;
+   background-color: var(--headprimal);
+   color: var(--neutral-100);
+   max-width: 350px;
+   margin-left: 30px;
+   margin-right: 40px;
+   height: fit-content;
+   border-top-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+   padding: 30px;
+}
+
+.loyalty-card .location-heading {
+   display: inline; 
+   margin-right: 39%;  
+}
+
+.loyalty-card .location-on {
+   width: auto;
+   font-size: 27px;
+   color: var(--yellow-1);
+   vertical-align: middle;
+}
+
+.loyalty-card .loyalty-location-address .address-location {
+   font-size: 14px;
+   margin: 12px 0 12px 0;
+}
+
+.loyalty-card .location .location-btn {
+   /* margin-left : auto vase in bod ke btn ma samte rast nemiraft */
+   background-color: var(--yellow-1);
+   width: fit-content;
+   margin-top: 20px;
+   margin-left: auto;
+   margin-right: 15px;
+   padding: 10px 35px;
+   border-radius: var(--radius-extra-large);
+   color: var(--neutral-5);
+   font-weight: 600;
+}
+
