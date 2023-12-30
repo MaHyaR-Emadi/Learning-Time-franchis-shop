@@ -644,7 +644,7 @@ baraye inke az paeen e pic - div e ma bezane biroon ham height : fit-content goz
    max-width: 350px;
    margin-left: 30px;
    margin-right: 40px;
-   height: fit-content;
+   /* height: fit-content; */
    border-top-left-radius: 20px;
    border-bottom-right-radius: 20px;
    padding: 30px;
@@ -656,7 +656,7 @@ baraye inke az paeen e pic - div e ma bezane biroon ham height : fit-content goz
 }
 
 .loyalty-card .location-on {
-   width: auto;
+   /* width: auto; */
    font-size: 27px;
    color: var(--yellow-1);
    vertical-align: middle;
@@ -690,7 +690,6 @@ baraye inke az paeen e pic - div e ma bezane biroon ham height : fit-content goz
 }
 
 .cooperation .cooperation-section {
-   display: grid;
     text-align: center;
    color: var(--neutral-100);
 }
@@ -912,4 +911,103 @@ transition: var(--transition-duration-quick) var(--transition-easing-quick);
     font-weight: 500;
     border-radius: var(--radius-extra-large);
     transition: var(--transition-duration-quick) var(--transition-easing-quick);
+}
+
+/* footer */
+
+.footer {
+   background-color: var(--headprimal);
+   color: var(--neutral-100);
+}
+
+.footer-top .container {
+   padding-block: 90px;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   gap: 24px  ;
+}
+
+.footer-top .logo {
+   padding-left: 50px;
+}
+
+.footer-top .number,
+.footer-top .email-franchise {
+   font-weight: 600;
+}
+
+.footer-top .email-franchise {
+   margin-block: 20px;
+}
+
+
+:is(.email-franchise, .number-franchise):is(:hover, :focus) {
+   color: var(--primary-100);
+}
+
+.footer-top .footer-text {
+   color: var(--neutral-60);
+}
+
+.footer-top .footer-list-title {
+   margin-block-start: 40px;
+   margin-block-end: 15px;
+   color: var(--yellow-1);
+}
+
+.footer-list{
+   display: grid;
+   gap: 5px;
+}
+
+.footer-link { transition: var(--transition-duration-quick) var(--transition-easing-quick);}
+
+.footer-link:where(:hover, :focus-visible) {
+   color: var(--primary-100);
+   text-decoration: underline;
+}
+
+.footer-bottom {
+   border-block-start: 1px solid var(--neutral-20);
+}
+
+.footer-bottom .container {
+   padding-block-start: 30px;
+   color: var(--neutral-100);
+}
+.footer-bottom .copyright{
+   font-size: 9px;
+}
+.footer-bottom .copyright a {
+   display: inline;
+   font-weight: 600;
+}
+
+.footer-bottom .copyright a:where(:hover, .focus) {
+   color: var(--primary-100);
+   text-decoration: underline;
+}
+
+.footer-bottom .footer-bottom-list {
+   display: flex;
+   justify-content: center;
+}
+
+.footer-bottom .footer-bottom-list li{
+   padding-inline: 10px;
+}
+
+.footer-bottom .footer-bottom-list li:not(:last-child) {
+   border-right: 1px solid var(--neutral-20);
+}
+
+.footer-bottom .footer-bottom-list li :where(:hover, .focus) {
+   color: var(--primary-100);
+   text-decoration: underline;
+}
+
+.footer-bottom .owl-img {
+   margin-left: -55px; 
 }
