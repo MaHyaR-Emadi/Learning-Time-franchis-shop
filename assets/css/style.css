@@ -159,7 +159,7 @@ html {
    font-size: var(--fs-base);
    scroll-behavior: smooth;
    /* image problem for scroll */
-   overflow-x: hidden;
+   /* overflow-x: hidden; */
 }
 
 body {
@@ -265,6 +265,11 @@ body {
 
 
 /* button */
+/* start peida kardan location baraye 992px */
+.header .container .navbar-wrapper-992 {
+   display: none;
+}
+/* end peida kardan location baraye 992px */
 
 .btn {
    display: flex;
@@ -314,7 +319,7 @@ body {
    color: var(--yellow-1);
 }
 
-/* header */
+/* header  */
 
 .header {
    position: fixed;
@@ -1017,14 +1022,14 @@ transition: var(--transition-duration-quick) var(--transition-easing-quick);
 /* responsive for larger than 768px screen */
 
 @media (min-width: 768px) {
-:root {
+ :root {
       /* font size */
        --fs-headline-large: 5rem;
        --fs-headline-medium: 4rem;
        --fs-headline-small : 3rem;
        --fs-title-medium : 2.4rem;
        --fs-title-small : 2rem;
-       --fs-label-medium : 1.8rem;
+       --fs-label-medium : 1.5rem;
    
        /*  line height */
        --lh-headline-large: 64px;
@@ -1038,11 +1043,13 @@ transition: var(--transition-duration-quick) var(--transition-easing-quick);
        .hero {
            height: 700px;
        }
+
+       
    
        .info {
            padding-block-start: 90vh;
        }
-   
+
    .hero .container .shopping {
        width: 720px;
        height: 680px;
@@ -1124,7 +1131,7 @@ transition: var(--transition-duration-quick) var(--transition-easing-quick);
 .cooperation .container h2 {
    text-align:left ;
    padding-left: 0;
-   margin-right: 60px; 
+   /* margin-right: 60px;  */
 }
 
 
@@ -1134,7 +1141,7 @@ transition: var(--transition-duration-quick) var(--transition-easing-quick);
 }
 
 .cooperation .container p{
-   padding-right: 150px;
+   padding-right: 180px;
 }
 
 .cooperation .screen-700 {
@@ -1158,6 +1165,9 @@ transition: var(--transition-duration-quick) var(--transition-easing-quick);
 
 .cooperation .container .town-number h3{
    color: #d0c9ff;
+}
+.cooperation .container .cooperation-contact {
+   text-align: center;
 }
 .cooperation .container .country{
    padding-left: 0;
@@ -1193,7 +1203,8 @@ transition: var(--transition-duration-quick) var(--transition-easing-quick);
 .footer-top .container{
    grid-template-columns: 300px repeat(2, 1fr);
    text-align: left;
-   margin-right: 20px;
+   /* margin-right: 20px; */
+   gap: 50px;
 }
 .footer .footer-top .logo {
    padding-left: 0;
@@ -1224,7 +1235,7 @@ transition: var(--transition-duration-quick) var(--transition-easing-quick);
 .footer .footer-bottom .owl-img {
    margin-top: -45px;
    margin-left: -100px;
-}
+} 
 
    }
 
@@ -1232,6 +1243,75 @@ transition: var(--transition-duration-quick) var(--transition-easing-quick);
    /* responsive for larger than 992px screen */
 
    @media (min-width:992px) {
+   
 
+      .container {
+         max-width: 950px;
+      }
+      .header .container {
+         display: grid;
+         /* vase inke bessorate ofoghi neshon bede navbar maro */
+         grid-auto-flow: column;
+         grid-template-columns: 1fr;
+         /* browser ma resize ke mishe jaye eleman ha taghir nemikone */
+      }
+
+      .header .container .navbar-wrapper {
+         display: inline;  
+         padding: 10px;
+      }
+
+   
+      .hero .container .shopping {
+         width: 950px; 
+     }
+
+
+     .hero .container .product {
+      max-width: 290px;
+      width: 100%;
+      left: calc(60% + 20px);
       
+  }
+  
+  .hero .container .price .price-of-product {
+   max-width: 160px;
+   width: 100%;
+   left: calc(60% + 23px);
+      
+  }
+     
+  
+  .loyalty-card .container .location-pic .loyalty-location-address{
+   width: 380px;
+}
+
+
+.loyalty-card .container .location-pic .location-on {
+   margin-left: 80px;
+}
+
+.cooperation .container .cooperation-town-pic {
+   width: 150px;
+   height: 210px;
+   margin-right: 40px;
+   margin-block-start: 40px;
+}
+.cooperation .container h2{
+   padding-right: 100px;
+}
+.cooperation .container p{
+   padding-right: 270px;
+}
+.about-us-section .store-list .card-content .category{
+   margin-left: 70px;
+}
+.about-us-section .container .read-news-btn {
+   max-width: 250px;
+   width: 100%;
+}
+.footer-top .container{
+   gap: 130px;
+}
+
    }
