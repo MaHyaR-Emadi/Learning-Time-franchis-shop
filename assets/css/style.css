@@ -992,11 +992,6 @@ transition: var(--transition-duration-quick) var(--transition-easing-quick);
    font-weight: 600;
 }
 
-.footer-bottom .copyright a:where(:hover, .focus) {
-   color: var(--primary-100);
-   text-decoration: underline;
-}
-
 .footer-bottom .footer-bottom-list {
    display: flex;
    justify-content: center;
@@ -1008,6 +1003,11 @@ transition: var(--transition-duration-quick) var(--transition-easing-quick);
 
 .footer-bottom .footer-bottom-list li:not(:last-child) {
    border-right: 1px solid var(--neutral-20);
+}
+
+.footer-bottom .copyright a:where(:hover, .focus) {
+   color: var(--primary-100);
+   text-decoration: underline;
 }
 
 .footer-bottom .footer-bottom-list li :where(:hover, .focus) {
@@ -1418,10 +1418,8 @@ transition: var(--transition-duration-quick) var(--transition-easing-quick);
 }
 .header.active {
    height: 70px;
+   background-color: #161834e0;
 }
- .hero .container .imageholder {
-   /* max-width: 1050px; */
- }
 
 .hero .container .shopping {
    position: absolute;
@@ -1431,17 +1429,6 @@ transition: var(--transition-duration-quick) var(--transition-easing-quick);
    width: 1350px;
    height: 790px;
    /* z-index: 1; */
-}
-
-.hero .container .product-item {
-   /* position: absolute; */
-   /* object-fit: contain; */
-   /* height: 200px; */
-   /* background-position-x: 83.333%; */
-   /* background-position-y: 50%; */
-   /* scale: 1.2; */
-   
-/* object-fit: none; */
 }
 
 .hero .container .product {
@@ -1532,7 +1519,137 @@ text-align: center;
    font-size: 34px;
 }
 
+.cooperation .container {
+   max-width: 1100px;
+}
+
+.cooperation .cooperation-section .screen-700top h2{
+   font-size: 32px;
+   line-height: 3.5rem;
+   padding-right: 0;
+}
+
+.cooperation .cooperation-section .cooperation-paragraph{
+   font-size: 15px;
+   line-height: 3rem;
+}
+
+.cooperation .cooperation-section .cooperation-contact{
+   padding-left: 125px;
+    font-size: 32px;
+    text-align: left;
+}
+
+.cooperation .cooperation-section .cooperation-req{
+   font-size: 15px;
+}
+
+.cooperation .cooperation-section .cooperation-town{
+   justify-content: left;
+   flex-basis: 30%;
+}
+
+.cooperation .screen-700 {
+   margin-top: 50px;
+   line-height: 3rem;
+   grid-column: 50%;
+   grid-template-columns: 37% 63%;
+}
 
 
+.cooperation .screen-700 .town-number{
+   margin-block-start: 90px; 
+   width: max-content;
+}
+
+.cooperation .screen-700 .town-number h3 {
+   font-size: 24px;
+   font-weight: 700;
+}
+.cooperation .screen-700 .town-number h6 {
+   font-size: 16px;
+}
+
+.about-us-section .container {
+   max-width: 1100px;
+}
+
+.about-us-section .container .read-more{
+   line-height: 3.5rem;
+}
+
+.about-us-section .container .read-more-about{
+   font-size: 32px;
+   padding-bottom: 35px;
+}
+
+.about-us-section .container .card .card-content .category{
+   font-size: 15px;
+   font-weight: 400;
+}
+
+.about-us-section .container .store-list .card .card-content {
+   font-size: 23px;
+   line-height: 3.5rem;
+}
+.about-us-section .container .store-list .card .card-content h3 {
+   font-weight: 600;
+}
+
+.about-us-section .container .store-list .card .card-content .card-text {
+   font-size: 15px;
+}
+
+.about-us-section .container .store-list .card .card-history .history-text {
+   font-size: 13px;
+}
+
+.footer .footer-top .container,
+footer .footer-bottom .container {
+   max-width: 1100px;
+}
+
+.footer .footer-top .container{
+   grid-template-columns: 450px repeat(2, 1fr);
+}
+
+.footer .footer-top .container .number {
+   font-size: 16px;
+}
+.footer .footer-top .container .email-franchise {
+   font-weight: 800;
+}
+
+.footer .footer-top .container .footer-text {
+   font-size: 16px;
+   line-height: 3rem;
+}
+
+.footer .footer-top .container .footer-nav .footer-list-title{
+   font-weight: 600;
+}
+
+.footer .footer-top .container .footer-nav .footer-link{
+   font-size: 15px;
+   font-weight: 400;
+}
+
+.footer-bottom .container .copyright {
+   display: inline-block;
+}
+
+.footer-bottom .container .footer-bottom-list{
+   display: inline-flex;
+   margin-left: 110px;
+}
+
+.footer-bottom .owl-img {
+   margin-left: -190px !important; 
+}
+
+.footer-bottom .footer-bottom-link{
+   font-size: 14px;
+   font-weight: 500;
+}
 
 }
